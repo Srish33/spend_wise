@@ -27,13 +27,13 @@ class SpendWiseApp extends StatelessWidget {
           seedColor: const Color(0xFF330445),
         ),
         useMaterial3: true,
-        textTheme: GoogleFonts.merriweatherTextTheme(),
+        textTheme: GoogleFonts.bricolageGrotesqueTextTheme(),
         scaffoldBackgroundColor: const Color(0xFFBD89CE),
         appBarTheme: AppBarTheme(
           centerTitle: false,
           backgroundColor: const Color(0xFF9751A6),
-          titleTextStyle: GoogleFonts.merriweather(
-            color: const Color(0xFF330445),
+          titleTextStyle: GoogleFonts.libreBaskerville(
+            color: const Color(0xFFFFFFFF),
             fontSize: 20,
             fontWeight: FontWeight.w600,
           ),
@@ -197,7 +197,7 @@ class _SpendWiseHomeState extends State<SpendWiseHome> {
             IconButton(
               onPressed: _openDashboard,
               icon: const Icon(Icons.dashboard_outlined),
-              color: const Color(0xFF330445),
+              color: const Color(0xFFFFFFFF),
               tooltip: 'Open dashboard',
             ),
           ],
