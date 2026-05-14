@@ -47,7 +47,15 @@ class DashboardScreen extends StatelessWidget {
 
       return Scaffold(
         appBar: AppBar(title: const Text('Dashboard')),
-        body: ListView(
+        body:
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: const AssetImage('Assets/Image1.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+        child: ListView(
           padding: const EdgeInsets.all(12),
           children: [
             DashboardMetricCard(
@@ -74,6 +82,7 @@ class DashboardScreen extends StatelessWidget {
               color: Colors.orange,
             ),
           ],
+        ),
         ),
       );
   }

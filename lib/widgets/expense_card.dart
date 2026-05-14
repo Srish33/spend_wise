@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:spend_wise/models/expense.dart';
 import 'package:intl/intl.dart';
@@ -9,11 +10,21 @@ class ExpenseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+
+    final Map<ExpenseCategory, String> categoryImages = {
+      ExpenseCategory.food: 'Assets/i5-food.png',
+      ExpenseCategory.transport: 'Assets/i4-t.png',
+      ExpenseCategory.fun: 'Assets/i7-fun.png',
+    };
+        return Card(
+
       margin: const EdgeInsets.symmetric(vertical: 6),
       child: ListTile(
         leading: CircleAvatar(
-          backgroundImage: AssetImage('Assets/flower.png'),
+          backgroundImage: AssetImage(
+            categoryImages[expense.category] ??
+                'assets/food.png',
+          ),
         ),
         title: Text(
           expense.title,

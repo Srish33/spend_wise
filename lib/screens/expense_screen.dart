@@ -262,7 +262,7 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
                 background: Container(
                   alignment: Alignment.centerRight,
                   padding: const EdgeInsets.only(right: 20),
-                  color: Colors.red,
+                  color: Colors.black,
                   child: const Icon(Icons.delete, color: Colors.white),
                 ),
                 child: ExpenseCard(expense: expense),
