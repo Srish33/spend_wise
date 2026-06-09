@@ -27,7 +27,7 @@ class SpendWiseApp extends StatelessWidget {
           seedColor: const Color(0xFF330445),
         ),
         useMaterial3: true,
-        textTheme: GoogleFonts.bricolageGrotesqueTextTheme(),
+        textTheme: GoogleFonts.montserratTextTheme(),
         scaffoldBackgroundColor: const Color(0xFFBD89CE),
         appBarTheme: AppBarTheme(
           centerTitle: false,

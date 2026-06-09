@@ -60,13 +60,13 @@ class DashboardScreen extends StatelessWidget {
           children: [
             DashboardMetricCard(
               label: 'Total spent',
-              value: '\$${totalSpent.toStringAsFixed(2)}',
+              value: '\₹${totalSpent.toStringAsFixed(2)}',
               icon: Icons.account_balance_wallet,
               color: Colors.teal,
         ),
         DashboardMetricCard(
           label: "Today's spending",
-          value: '\$${todaySpent.toStringAsFixed(2)}',
+          value: '\₹${todaySpent.toStringAsFixed(2)}',
           icon: Icons.today_outlined,
           color: Colors.blue,
             ),

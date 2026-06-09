@@ -37,7 +37,7 @@ class ExpenseCard extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
         trailing: Text(
-          '\₹ ${expense.amount.toStringAsFixed(2)}',
+          '\₹${expense.amount.toStringAsFixed(2)}',
           style: const TextStyle(fontWeight: FontWeight.w600),
         ),
       ),

@@ -209,7 +209,7 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
                       overflow: TextOverflow.ellipsis,
                     ),
                     Text(
-                      '\₹ ${total.toStringAsFixed(2)}',
+                      '\₹${total.toStringAsFixed(2)}',
                       style: Theme.of(context).textTheme.titleLarge,
                       overflow: TextOverflow.ellipsis,
                     ),
